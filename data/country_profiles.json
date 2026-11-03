@@ -53,5 +53,20 @@
  "sweden":         {"col": 65.5, "rent": 20.1, "safety": 52.2, "tax": 52.3, "salary": 46525, "passport": 186, "pr": "约 4 年", "cit": "8 年（2026-06-06 起）", "dual": "✅", "lang": "瑞典语 + 公民考试（新）", "entry": "申根签证"},
  "switzerland":    {"col": 109.8, "rent": 47.9, "safety": 71.9, "tax": 39.7, "salary": null,  "passport": 186, "pr": "10 年（部分 5 年）", "cit": "10 年", "dual": "✅", "lang": "当地语 B1 口语", "entry": "申根签证"},
  "turkiye":        {"col": 40.2, "rent": 12.3, "safety": 58.5, "tax": 40.8, "salary": null,  "passport": 113, "pr": "8 年（长期居留）", "cit": "5 年（投资可直接）", "dual": "✅", "lang": "土耳其语", "entry": "电子签证（e-Visa）"},
- "united-kingdom": {"col": 68.2, "rent": 30.1, "safety": 51.8, "tax": 45,   "salary": null,  "passport": 182, "pr": "5 年（拟改 10 年）", "cit": "永居后 1 年", "dual": "✅", "lang": "英语 B1 + Life in UK", "entry": "英国签证"}
+ "united-kingdom": {"col": 68.2, "rent": 30.1, "safety": 51.8, "tax": 45,   "salary": null,  "passport": 182, "pr": "5 年（拟改 10 年）", "cit": "永居后 1 年", "dual": "✅", "lang": "英语 B1 + Life in UK", "entry": "英国签证"},
+ "usa": {"col": 69.7, "rent": 37.1, "safety": 50.8, "tax": null, "salary": null, "passport": 179, "pr": "因排期而异（EB 类别数年至十余年）", "cit": "绿卡 5 年", "dual": "✅", "lang": "多数路线无强制语言要求", "entry": "需办理 B1/B2 签证（不适用 ESTA 免签）"},
+ "canada": {"col": 61.3, "rent": 29.1, "safety": 54.4, "tax": null, "salary": null, "passport": 181, "pr": "Express Entry 获邀后约 6 个月", "cit": "5 年内住满 1,095 天", "dual": "✅", "lang": "雅思/CELPIP 等语言成绩计分", "entry": "需办理访问签证"},
+ "australia": {"col": 71.4, "rent": 33.1, "safety": 52.6, "tax": null, "salary": null, "passport": 182, "pr": "189/858 直接永居；482 需转 186", "cit": "住满 4 年（含永居满 1 年）", "dual": "✅", "lang": "雅思 6-7 分（按签证类别）", "entry": "需办理签证"},
+ "new-zealand": {"col": 60.2, "rent": 24.6, "safety": 51.2, "tax": null, "salary": null, "passport": 183, "pr": "SMC 获邀后数月；AIP 最快 21 天", "cit": "通常住满 5 年", "dual": "✅", "lang": "雅思约 6.5（AIP 2025 起免语言）", "entry": "需办理签证"},
+ "japan": {"col": 47.6, "rent": 13.6, "safety": 77.8, "tax": null, "salary": null, "passport": 188, "pr": "高度人才最快 1 年（80 分）", "cit": "原则住满 5 年，且须放弃原国籍", "dual": "❌", "lang": "N2/B2（经营管理签证要求）", "entry": "需办理签证"},
+ "south-korea": {"col": 56.7, "rent": 13.6, "safety": 70.3, "tax": null, "salary": null, "passport": 188, "pr": "Top-Tier 3 年；F-2-7 积分制", "cit": "一般住满 5 年", "dual": "⚠️", "lang": "多数路线无强制韩语要求", "entry": "需办理签证"},
+ "singapore": {"col": 90.8, "rent": 68.3, "safety": 77.7, "tax": null, "salary": null, "passport": 192, "pr": "酌情审批，无固定年限", "cit": "通常需持有 PR 2 年以上", "dual": "❌", "lang": "无强制语言要求", "entry": "免签 30 天（2024 起）"},
+ "hong-kong": {"col": 76.4, "rent": 59.1, "safety": 78.2, "tax": null, "salary": null, "passport": 171, "pr": "通常居住连续 7 年", "cit": "非国籍，是居留权；不涉及放弃原国籍", "dual": "⚠️", "lang": "无强制语言要求（粤语/英语为工作语言）", "entry": "大陆居民需办理港澳通行证"},
+ "philippines": {"col": 29.1, "rent": 7.2, "safety": 56.6, "tax": null, "salary": null, "passport": 64, "pr": "SRRV/SIRV 为长期居留，非永久居民身份", "cit": "一般住满 10 年（较少见）", "dual": "⚠️", "lang": "英语为官方语言之一，无强制要求", "entry": "免签 30 天"},
+ "thailand": {"col": 36.8, "rent": 12.8, "safety": 63.6, "tax": null, "salary": null, "passport": 79, "pr": "DTV/LTR 均不直接导向永居", "cit": "一般住满 5 年（审批严格，少见）", "dual": "⚠️", "lang": "无强制泰语要求", "entry": "免签 60 天"},
+ "malaysia": {"col": 34.0, "rent": 8.5, "safety": 52.0, "tax": null, "salary": null, "passport": 180, "pr": "MM2H 不直接导向永居，需另申请", "cit": "一般住满 7 年（审批严格）", "dual": "❌", "lang": "无强制语言要求", "entry": "免签 30 天"},
+ "uae": {"col": 55.6, "rent": 36.3, "safety": 86.4, "tax": null, "salary": null, "passport": 184, "pr": "黄金签证为长期居留，非永居/入籍路径", "cit": "几乎不可能（需特殊贡献+酌情审批）", "dual": "❌", "lang": "无强制语言要求", "entry": "免签"},
+ "mexico": {"col": 44.4, "rent": 17.1, "safety": 47.3, "tax": null, "salary": null, "passport": 157, "pr": "临时居留满 4 年可转永居", "cit": "一般住满 5 年（已婚或有墨籍子女 2 年）", "dual": "✅", "lang": "无强制西语要求（移民局面谈用西语）", "entry": "普通护照需办理签证"},
+ "panama": {"col": null, "rent": null, "safety": null, "tax": null, "salary": null, "passport": null, "pr": "合格投资者居留可转永居", "cit": "一般住满 5 年", "dual": "✅", "lang": "无强制西语要求", "entry": "普通护照需办理签证（不在友好国家名单）"},
+ "argentina": {"col": null, "rent": null, "safety": null, "tax": null, "salary": null, "passport": null, "pr": "数字游民签证不导向永居", "cit": "一般住满 2 年", "dual": "✅", "lang": "无强制西语要求", "entry": "普通护照需办理签证"}
 }

@@ -7,6 +7,7 @@ export type RouteType =
   | "self-employed"
   | "startup"
   | "citizenship"
+  | "passive"
   | "other";
 
 export interface Source {
@@ -40,6 +41,7 @@ export const routeTypeLabel: Record<RouteType, string> = {
   "self-employed": "自雇",
   startup: "创业",
   citizenship: "入籍",
+  passive: "被动收入居留",
   other: "其他",
 };
 

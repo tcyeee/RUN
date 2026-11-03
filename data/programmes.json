@@ -3193,5 +3193,669 @@
    }
   ],
   "status": "closed"
+ },
+ {
+  "country": "美国",
+  "country_slug": "usa",
+  "programme": "F-1 留学 → OPT → H-1B",
+  "slug": "us-h1b",
+  "route_type": "work",
+  "audience": "在美读 STEM 硕博、能拿到较高工资等级 offer",
+  "family": "",
+  "pr": "因排期而异（EB 类别数年至十余年）",
+  "threshold": "毕业后 1 年，STEM 专业共 3 年",
+  "verified": "2026-10",
+  "overview": "最常见的路径：读书 → 实习工作 → 抽签拿工作签证 → 雇主办绿卡。",
+  "letsmigrate": "https://github.com/tcyeee/RUN/blob/main/docs/global/usa.md#us-h1b",
+  "sources": [
+   {
+    "title": "USCIS",
+    "url": "https://www.uscis.gov/"
+   },
+   {
+    "title": "Visa Bulletin 排期表",
+    "url": "https://travel.state.gov/content/travel/en/legal/visa-law0/visa-bulletin.html"
+   }
+  ],
+  "status": "open"
+ },
+ {
+  "country": "美国",
+  "country_slug": "usa",
+  "programme": "EB-1A 杰出人才 / EB-2 NIW 国家利益豁免",
+  "slug": "us-eb1a-niw",
+  "route_type": "work",
+  "audience": "论文、专利、奖项、媒体报道丰富的人",
+  "family": "",
+  "pr": "因排期而异（EB 类别数年至十余年）",
+  "threshold": "FAD 2023-08-01（2026-11）",
+  "verified": "2026-10",
+  "overview": "不需要雇主，自己申请绿卡；科研人员和高成就专业人士的主要途径。",
+  "letsmigrate": "https://github.com/tcyeee/RUN/blob/main/docs/global/usa.md#us-eb1a-niw",
+  "sources": [
+   {
+    "title": "USCIS",
+    "url": "https://www.uscis.gov/"
+   },
+   {
+    "title": "Visa Bulletin 排期表",
+    "url": "https://travel.state.gov/content/travel/en/legal/visa-law0/visa-bulletin.html"
+   }
+  ],
+  "status": "open"
+ },
+ {
+  "country": "美国",
+  "country_slug": "usa",
+  "programme": "EB-5 投资移民",
+  "slug": "us-eb5",
+  "route_type": "residence-by-investment",
+  "audience": "资金充足、来源清晰",
+  "family": "",
+  "pr": "因排期而异（EB 类别数年至十余年）",
+  "threshold": "USD 800,000",
+  "verified": "2026-10",
+  "overview": "投资 80 万美元（TEA 区域）直接申请绿卡，乡村预留名额可绕开中国排期。",
+  "letsmigrate": "https://github.com/tcyeee/RUN/blob/main/docs/global/usa.md#us-eb5",
+  "sources": [
+   {
+    "title": "USCIS",
+    "url": "https://www.uscis.gov/"
+   },
+   {
+    "title": "Visa Bulletin 排期表",
+    "url": "https://travel.state.gov/content/travel/en/legal/visa-law0/visa-bulletin.html"
+   }
+  ],
+  "status": "open"
+ },
+ {
+  "country": "加拿大",
+  "country_slug": "canada",
+  "programme": "Express Entry 快速通道",
+  "slug": "ca-ee",
+  "route_type": "work",
+  "audience": "有加拿大工作经验、法语好、医疗、技工等定向职业",
+  "family": "",
+  "pr": "Express Entry 获邀后约 6 个月",
+  "threshold": "2026 年约 507–523",
+  "verified": "2026-10",
+  "overview": "CRS 打分池，按类别定期抽签，获邀后约 6 个月拿永居。",
+  "letsmigrate": "https://github.com/tcyeee/RUN/blob/main/docs/global/canada.md#ca-ee",
+  "sources": [
+   {
+    "title": "IRCC Express Entry",
+    "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry.html"
+   }
+  ],
+  "status": "open"
+ },
+ {
+  "country": "加拿大",
+  "country_slug": "canada",
+  "programme": "省提名 PNP",
+  "slug": "ca-pnp",
+  "route_type": "work",
+  "audience": "",
+  "family": "",
+  "pr": "Express Entry 获邀后约 6 个月",
+  "threshold": "BC、安省",
+  "verified": "2026-10",
+  "overview": "各省按需求提名，获提名后 Express Entry 加 600 分。",
+  "letsmigrate": "https://github.com/tcyeee/RUN/blob/main/docs/global/canada.md#ca-pnp",
+  "sources": [
+   {
+    "title": "IRCC Express Entry",
+    "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry.html"
+   }
+  ],
+  "status": "open"
+ },
+ {
+  "country": "加拿大",
+  "country_slug": "canada",
+  "programme": "联邦创业签证 SUV",
+  "slug": "ca-suv",
+  "route_type": "startup",
+  "audience": "",
+  "family": "",
+  "pr": "Express Entry 获邀后约 6 个月",
+  "threshold": "2026-06-30",
+  "verified": "2026-10",
+  "overview": "2026-06-30 起完全暂停，新的企业家试点规则尚未公布。",
+  "letsmigrate": "https://github.com/tcyeee/RUN/blob/main/docs/global/canada.md#ca-suv",
+  "sources": [
+   {
+    "title": "IRCC Express Entry",
+    "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry.html"
+   }
+  ],
+  "status": "closed"
+ },
+ {
+  "country": "澳大利亚",
+  "country_slug": "australia",
+  "programme": "189 独立技术移民",
+  "slug": "au-189",
+  "route_type": "work",
+  "audience": "",
+  "family": "",
+  "pr": "189/858 直接永居；482 需转 186",
+  "threshold": "≥65 分，实际常 75–85+",
+  "verified": "2026-10",
+  "overview": "积分制直接永居，不需要雇主，但实际获邀分数很高。",
+  "letsmigrate": "https://github.com/tcyeee/RUN/blob/main/docs/global/australia.md#au-189",
+  "sources": [
+   {
+    "title": "Home Affairs",
+    "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing"
+   }
+  ],
+  "status": "open"
+ },
+ {
+  "country": "澳大利亚",
+  "country_slug": "australia",
+  "programme": "482 紧缺技能签证（Skills in Demand）",
+  "slug": "au-482",
+  "route_type": "work",
+  "audience": "",
+  "family": "",
+  "pr": "189/858 直接永居；482 需转 186",
+  "threshold": "AUD 79,423（2026-07-01 起）",
+  "verified": "2026-10",
+  "overview": "雇主担保工签，可转 186 永居。",
+  "letsmigrate": "https://github.com/tcyeee/RUN/blob/main/docs/global/australia.md#au-482",
+  "sources": [
+   {
+    "title": "Home Affairs",
+    "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing"
+   }
+  ],
+  "status": "open"
+ },
+ {
+  "country": "澳大利亚",
+  "country_slug": "australia",
+  "programme": "858 国家创新签证",
+  "slug": "au-858",
+  "route_type": "work",
+  "audience": "",
+  "family": "",
+  "pr": "189/858 直接永居；482 需转 186",
+  "threshold": "一般需能达高收入门槛（约 AUD 175,000）",
+  "verified": "2026-10",
+  "overview": "邀请制，需国际认可的杰出成就和澳洲提名人，直接永居。",
+  "letsmigrate": "https://github.com/tcyeee/RUN/blob/main/docs/global/australia.md#au-858",
+  "sources": [
+   {
+    "title": "Home Affairs",
+    "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing"
+   }
+  ],
+  "status": "open"
+ },
+ {
+  "country": "新西兰",
+  "country_slug": "new-zealand",
+  "programme": "技术移民 SMC",
+  "slug": "nz-smc",
+  "route_type": "work",
+  "audience": "",
+  "family": "",
+  "pr": "SMC 获邀后数月；AIP 最快 21 天",
+  "threshold": "≤55 岁",
+  "verified": "2026-10",
+  "overview": "认证雇主 offer + 6 分，学历、职业注册或收入给分，可用新西兰工作经验补。",
+  "letsmigrate": "https://github.com/tcyeee/RUN/blob/main/docs/global/new-zealand.md#nz-smc",
+  "sources": [
+   {
+    "title": "Immigration NZ",
+    "url": "https://www.immigration.govt.nz/"
+   }
+  ],
+  "status": "open"
+ },
+ {
+  "country": "新西兰",
+  "country_slug": "new-zealand",
+  "programme": "Active Investor Plus 投资移民",
+  "slug": "nz-aip",
+  "route_type": "residence-by-investment",
+  "audience": "",
+  "family": "",
+  "pr": "SMC 获邀后数月；AIP 最快 21 天",
+  "threshold": "NZD 5,000,000，3 年，21 天",
+  "verified": "2026-10",
+  "overview": "增长类 500 万投资 3 年、在新住 21 天即可永居。",
+  "letsmigrate": "https://github.com/tcyeee/RUN/blob/main/docs/global/new-zealand.md#nz-aip",
+  "sources": [
+   {
+    "title": "Immigration NZ",
+    "url": "https://www.immigration.govt.nz/"
+   }
+  ],
+  "status": "open"
+ },
+ {
+  "country": "日本",
+  "country_slug": "japan",
+  "programme": "高度专门职（高度人才）",
+  "slug": "jp-hsp",
+  "route_type": "work",
+  "audience": "硕博学历、年收入较高的技术人员",
+  "family": "",
+  "pr": "高度人才最快 1 年（80 分）",
+  "threshold": "3 年申请永住",
+  "verified": "2026-10",
+  "overview": "按学历、年收入、年龄、日语打分，70 分 3 年、80 分 1 年可申请永住。",
+  "letsmigrate": "https://github.com/tcyeee/RUN/blob/main/docs/global/japan.md#jp-hsp",
+  "sources": [
+   {
+    "title": "出入国在留管理厅",
+    "url": "https://www.moj.go.jp/isa/"
+   }
+  ],
+  "status": "open"
+ },
+ {
+  "country": "日本",
+  "country_slug": "japan",
+  "programme": "经营管理签证",
+  "slug": "jp-bm",
+  "route_type": "startup",
+  "audience": "",
+  "family": "",
+  "pr": "高度人才最快 1 年（80 分）",
+  "threshold": "¥30,000,000（原 500 万）",
+  "verified": "2026-10",
+  "overview": "2025-10-16 新规后门槛提高约 6 倍。",
+  "letsmigrate": "https://github.com/tcyeee/RUN/blob/main/docs/global/japan.md#jp-bm",
+  "sources": [
+   {
+    "title": "出入国在留管理厅",
+    "url": "https://www.moj.go.jp/isa/"
+   }
+  ],
+  "status": "open"
+ },
+ {
+  "country": "日本",
+  "country_slug": "japan",
+  "programme": "技术·人文知识·国际业务",
+  "slug": "jp-gjk",
+  "route_type": "work",
+  "audience": "",
+  "family": "",
+  "pr": "高度人才最快 1 年（80 分）",
+  "threshold": "大学或 10 年经验",
+  "verified": "2026-10",
+  "overview": "最常见的工作签证，大学学历或 10 年经验 + 日本雇主。",
+  "letsmigrate": "https://github.com/tcyeee/RUN/blob/main/docs/global/japan.md#jp-gjk",
+  "sources": [
+   {
+    "title": "出入国在留管理厅",
+    "url": "https://www.moj.go.jp/isa/"
+   }
+  ],
+  "status": "open"
+ },
+ {
+  "country": "韩国",
+  "country_slug": "south-korea",
+  "programme": "F-1-D 数字游民（Workation）",
+  "slug": "kr-f1d",
+  "route_type": "digital-nomad",
+  "audience": "",
+  "family": "",
+  "pr": "Top-Tier 3 年；F-2-7 积分制",
+  "threshold": "人均 GNI 2 倍（约 KRW 1 亿）",
+  "verified": "2026-10",
+  "overview": "2026-06-30 转为正式签证，年收入约 2 倍人均 GNI。",
+  "letsmigrate": "https://github.com/tcyeee/RUN/blob/main/docs/global/south-korea.md#kr-f1d",
+  "sources": [
+   {
+    "title": "HiKorea",
+    "url": "https://www.hikorea.go.kr/"
+   }
+  ],
+  "status": "open"
+ },
+ {
+  "country": "韩国",
+  "country_slug": "south-korea",
+  "programme": "Top-Tier 顶尖人才签证",
+  "slug": "kr-toptier",
+  "route_type": "work",
+  "audience": "",
+  "family": "",
+  "pr": "Top-Tier 3 年；F-2-7 积分制",
+  "threshold": "前 100 大学硕博",
+  "verified": "2026-10",
+  "overview": "全球前 100 大学 + 顶级企业经验 + 高薪，3 年可永住。",
+  "letsmigrate": "https://github.com/tcyeee/RUN/blob/main/docs/global/south-korea.md#kr-toptier",
+  "sources": [
+   {
+    "title": "HiKorea",
+    "url": "https://www.hikorea.go.kr/"
+   }
+  ],
+  "status": "open"
+ },
+ {
+  "country": "新加坡",
+  "country_slug": "singapore",
+  "programme": "Employment Pass",
+  "slug": "sg-ep",
+  "route_type": "work",
+  "audience": "",
+  "family": "",
+  "pr": "酌情审批，无固定年限",
+  "threshold": "SGD 5,600（金融 6,200），45 岁以上 10,700",
+  "verified": "2026-10",
+  "overview": "主流专业人士工作准证，薪资随年龄递增并需通过 COMPASS 积分。",
+  "letsmigrate": "https://github.com/tcyeee/RUN/blob/main/docs/global/singapore.md#sg-ep",
+  "sources": [
+   {
+    "title": "MOM",
+    "url": "https://www.mom.gov.sg/passes-and-permits"
+   }
+  ],
+  "status": "open"
+ },
+ {
+  "country": "新加坡",
+  "country_slug": "singapore",
+  "programme": "ONE Pass",
+  "slug": "sg-one",
+  "route_type": "work",
+  "audience": "",
+  "family": "",
+  "pr": "酌情审批，无固定年限",
+  "threshold": "月薪 ≥ SGD 30,000 或领域杰出",
+  "verified": "2026-10",
+  "overview": "顶尖人才准证，可自由换工作。",
+  "letsmigrate": "https://github.com/tcyeee/RUN/blob/main/docs/global/singapore.md#sg-one",
+  "sources": [
+   {
+    "title": "MOM",
+    "url": "https://www.mom.gov.sg/passes-and-permits"
+   }
+  ],
+  "status": "open"
+ },
+ {
+  "country": "香港",
+  "country_slug": "hong-kong",
+  "programme": "高端人才通行证（高才通）",
+  "slug": "hk-ttps",
+  "route_type": "work",
+  "audience": "名校毕业的内地人才",
+  "family": "",
+  "pr": "通常居住连续 7 年",
+  "threshold": "上年收入 ≥ HKD 250 万，首签 3 年",
+  "verified": "2026-10",
+  "overview": "高收入或名校毕业即可申请，无需工作 offer。",
+  "letsmigrate": "https://github.com/tcyeee/RUN/blob/main/docs/global/hong-kong.md#hk-ttps",
+  "sources": [
+   {
+    "title": "入境事务处",
+    "url": "https://www.immd.gov.hk/hks/useful_information/admission-schemes-talents-professionals-entrepreneurs.html"
+   }
+  ],
+  "status": "open"
+ },
+ {
+  "country": "香港",
+  "country_slug": "hong-kong",
+  "programme": "优秀人才入境计划",
+  "slug": "hk-qmas",
+  "route_type": "work",
+  "audience": "",
+  "family": "",
+  "pr": "通常居住连续 7 年",
+  "threshold": "综合计分",
+  "verified": "2026-10",
+  "overview": "积分制，无需 offer。",
+  "letsmigrate": "https://github.com/tcyeee/RUN/blob/main/docs/global/hong-kong.md#hk-qmas",
+  "sources": [
+   {
+    "title": "入境事务处",
+    "url": "https://www.immd.gov.hk/hks/useful_information/admission-schemes-talents-professionals-entrepreneurs.html"
+   }
+  ],
+  "status": "open"
+ },
+ {
+  "country": "香港",
+  "country_slug": "hong-kong",
+  "programme": "非本地毕业生 IANG",
+  "slug": "hk-iang",
+  "route_type": "work",
+  "audience": "",
+  "family": "",
+  "pr": "通常居住连续 7 年",
+  "threshold": "24 个月",
+  "verified": "2026-10",
+  "overview": "香港高校毕业生首签 24 个月，可自由就业。",
+  "letsmigrate": "https://github.com/tcyeee/RUN/blob/main/docs/global/hong-kong.md#hk-iang",
+  "sources": [
+   {
+    "title": "入境事务处",
+    "url": "https://www.immd.gov.hk/hks/useful_information/admission-schemes-talents-professionals-entrepreneurs.html"
+   }
+  ],
+  "status": "open"
+ },
+ {
+  "country": "菲律宾",
+  "country_slug": "philippines",
+  "programme": "SRRV 特别退休居留签证",
+  "slug": "ph-srrv",
+  "route_type": "passive",
+  "audience": "想在东南亚养老、预算有限的人、有稳定养老金的退休人士",
+  "family": "",
+  "pr": "SRRV/SIRV 为长期居留，非永久居民身份",
+  "threshold": "≥40 岁（2025-09 起，原为 50 岁）",
+  "verified": "2026-10",
+  "overview": "在菲律宾指定银行存一笔定期存款即可获得可无限期居留的退休签证，2025 年起 40 岁就能申请。",
+  "letsmigrate": "https://github.com/tcyeee/RUN/blob/main/docs/global/philippines.md#ph-srrv",
+  "sources": [
+   {
+    "title": "菲律宾退休局 PRA",
+    "url": "https://pra.gov.ph/"
+   },
+   {
+    "title": "菲律宾投资署 BOI",
+    "url": "https://boi.gov.ph/"
+   }
+  ],
+  "status": "open"
+ },
+ {
+  "country": "菲律宾",
+  "country_slug": "philippines",
+  "programme": "SIRV 特别投资者居留签证",
+  "slug": "ph-sirv",
+  "route_type": "residence-by-investment",
+  "audience": "想在菲律宾长期居住的投资者",
+  "family": "",
+  "pr": "SRRV/SIRV 为长期居留，非永久居民身份",
+  "threshold": "≥ USD 75,000",
+  "verified": "2026-10",
+  "overview": "投资 7.5 万美元于菲律宾合格企业或证券，获得可无限期居留的投资者签证。",
+  "letsmigrate": "https://github.com/tcyeee/RUN/blob/main/docs/global/philippines.md#ph-sirv",
+  "sources": [
+   {
+    "title": "菲律宾退休局 PRA",
+    "url": "https://pra.gov.ph/"
+   },
+   {
+    "title": "菲律宾投资署 BOI",
+    "url": "https://boi.gov.ph/"
+   }
+  ],
+  "status": "open"
+ },
+ {
+  "country": "泰国",
+  "country_slug": "thailand",
+  "programme": "DTV 目的地泰国签证",
+  "slug": "th-dtv",
+  "route_type": "digital-nomad",
+  "audience": "想在东南亚长住的远程工作者",
+  "family": "",
+  "pr": "DTV/LTR 均不直接导向永居",
+  "threshold": "THB 500,000，持有约 3 个月",
+  "verified": "2026-10",
+  "overview": "远程工作者和软实力活动参与者的 5 年多次入境签证。",
+  "letsmigrate": "https://github.com/tcyeee/RUN/blob/main/docs/global/thailand.md#th-dtv",
+  "sources": [
+   {
+    "title": "泰国电子签证",
+    "url": "https://www.thaievisa.go.th/"
+   }
+  ],
+  "status": "open"
+ },
+ {
+  "country": "泰国",
+  "country_slug": "thailand",
+  "programme": "LTR 长期居留签证",
+  "slug": "th-ltr",
+  "route_type": "work",
+  "audience": "",
+  "family": "",
+  "pr": "DTV/LTR 均不直接导向永居",
+  "threshold": "10 年",
+  "verified": "2026-10",
+  "overview": "10 年签，面向富裕人士、退休、远程专业人士、高技能人才。",
+  "letsmigrate": "https://github.com/tcyeee/RUN/blob/main/docs/global/thailand.md#th-ltr",
+  "sources": [
+   {
+    "title": "泰国电子签证",
+    "url": "https://www.thaievisa.go.th/"
+   }
+  ],
+  "status": "open"
+ },
+ {
+  "country": "马来西亚",
+  "country_slug": "malaysia",
+  "programme": "DE Rantau 数字游民通行证",
+  "slug": "my-derantau",
+  "route_type": "digital-nomad",
+  "audience": "",
+  "family": "支持家属（可随行）",
+  "pr": "MM2H 不直接导向永居，需另申请",
+  "threshold": "科技类 > USD 24,000/年",
+  "verified": "2026-10",
+  "overview": "科技类年入 2.4 万美元即可，1 + 1 年。",
+  "letsmigrate": "https://github.com/tcyeee/RUN/blob/main/docs/global/malaysia.md#my-derantau",
+  "sources": [
+   {
+    "title": "DE Rantau",
+    "url": "https://mdec.my/derantau"
+   },
+   {
+    "title": "MM2H",
+    "url": "https://www.mm2h.gov.my/"
+   }
+  ],
+  "status": "open"
+ },
+ {
+  "country": "马来西亚",
+  "country_slug": "malaysia",
+  "programme": "MM2H 第二家园",
+  "slug": "my-mm2h",
+  "route_type": "residence-by-investment",
+  "audience": "",
+  "family": "",
+  "pr": "MM2H 不直接导向永居，需另申请",
+  "threshold": "USD 15 万，5 年，购房 RM 60 万",
+  "verified": "2026-10",
+  "overview": "分级定存 + 购房换长期签证。",
+  "letsmigrate": "https://github.com/tcyeee/RUN/blob/main/docs/global/malaysia.md#my-mm2h",
+  "sources": [
+   {
+    "title": "DE Rantau",
+    "url": "https://mdec.my/derantau"
+   },
+   {
+    "title": "MM2H",
+    "url": "https://www.mm2h.gov.my/"
+   }
+  ],
+  "status": "open"
+ },
+ {
+  "country": "阿联酋",
+  "country_slug": "uae",
+  "programme": "黄金签证",
+  "slug": "ae-golden",
+  "route_type": "residence-by-investment",
+  "audience": "",
+  "family": "",
+  "pr": "黄金签证为长期居留，非永居/入籍路径",
+  "threshold": "AED 2,000,000（按估值，可贷款）",
+  "verified": "2026-10",
+  "overview": "房产 AED 200 万（约 54.5 万美元）换 10 年可续居留。",
+  "letsmigrate": "https://github.com/tcyeee/RUN/blob/main/docs/global/uae.md#ae-golden",
+  "sources": [
+   {
+    "title": "ICP",
+    "url": "https://icp.gov.ae/"
+   }
+  ],
+  "status": "open"
+ },
+ {
+  "country": "墨西哥",
+  "country_slug": "mexico",
+  "programme": "墨西哥临时居留",
+  "slug": "mx-temp",
+  "route_type": "residence-by-investment",
+  "audience": "",
+  "family": "支持家属（每人约 +USD 1,400/月）",
+  "pr": "临时居留满 4 年可转永居",
+  "threshold": "近 6 个月约 USD 4,400–4,500/月",
+  "verified": "2026-10",
+  "overview": "按收入或存款证明经济能力，最长 4 年后转永居。",
+  "letsmigrate": "https://github.com/tcyeee/RUN/blob/main/docs/global/latin-america.md#mx-temp",
+  "sources": [],
+  "status": "open"
+ },
+ {
+  "country": "巴拿马",
+  "country_slug": "panama",
+  "programme": "巴拿马合格投资者",
+  "slug": "pa-inv",
+  "route_type": "residence-by-investment",
+  "audience": "",
+  "family": "",
+  "pr": "合格投资者居留可转永居",
+  "threshold": "USD 300,000",
+  "verified": "2026-10",
+  "overview": "2026-09 收紧后新房 30 万美元起。",
+  "letsmigrate": "https://github.com/tcyeee/RUN/blob/main/docs/global/latin-america.md#pa-inv",
+  "sources": [],
+  "status": "open"
+ },
+ {
+  "country": "阿根廷",
+  "country_slug": "argentina",
+  "programme": "阿根廷数字游民",
+  "slug": "ar-dn",
+  "route_type": "digital-nomad",
+  "audience": "",
+  "family": "",
+  "pr": "数字游民签证不导向永居",
+  "threshold": "最长 1 年",
+  "verified": "2026-10",
+  "overview": "180 天 + 180 天，不通永居，需对阿免签护照。",
+  "letsmigrate": "https://github.com/tcyeee/RUN/blob/main/docs/global/latin-america.md#ar-dn",
+  "sources": [],
+  "status": "open"
  }
 ]
