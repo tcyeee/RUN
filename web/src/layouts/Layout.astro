@@ -6,6 +6,13 @@ interface Props {
 }
 
 const { title = "RUN · 润 — 海外移居手册" } = Astro.props;
+const path = Astro.url.pathname;
+
+const navItems = [
+  { href: "/", label: "选路向导" },
+  { href: "/routes", label: "路线库" },
+  { href: "/countries", label: "国家对比" },
+];
 ---
 
 <html lang="zh-CN">
@@ -14,17 +21,44 @@ const { title = "RUN · 润 — 海外移居手册" } = Astro.props;
     <meta name="viewport" content="width=device-width" />
     <title>{title}</title>
   </head>
-  <body class="bg-slate-50 text-slate-900">
-    <header class="border-b border-slate-200 bg-white">
-      <nav class="mx-auto flex max-w-5xl items-center gap-6 px-4 py-4">
-        <a href="/" class="font-semibold text-teal-700">RUN · 润</a>
-        <a href="/" class="text-sm text-slate-600 hover:text-teal-600">选路向导</a>
-        <a href="/routes" class="text-sm text-slate-600 hover:text-teal-600">路线库</a>
-        <a href="/countries" class="text-sm text-slate-600 hover:text-teal-600">国家对比</a>
+  <body class="flex min-h-screen flex-col bg-canvas font-sans text-ink antialiased">
+    <header
+      class="sticky top-0 z-50 border-b border-black/5 bg-white/70 backdrop-blur-xl backdrop-saturate-150"
+    >
+      <nav class="mx-auto flex max-w-5xl items-center gap-8 px-6 py-4">
+        <a href="/" class="flex items-center gap-2">
+          <span
+            class="flex h-7 items-center rounded-lg bg-gradient-to-br from-brand to-brand-dark px-2 text-[11px] font-bold tracking-wide text-white shadow-sm"
+          >
+            RUN
+          </span>
+          <span class="text-[15px] font-semibold tracking-tight text-ink">润</span>
+        </a>
+        <div class="flex items-center gap-6">
+          {
+            navItems.map((item) => (
+              <a
+                href={item.href}
+                class={`text-[13px] font-medium transition-colors ${
+                  path === item.href
+                    ? "text-ink"
+                    : "text-ink-soft hover:text-ink"
+                }`}
+              >
+                {item.label}
+              </a>
+            ))
+          }
+        </div>
       </nav>
     </header>
-    <main class="mx-auto max-w-5xl px-4 py-8">
+    <main class="mx-auto w-full max-w-5xl flex-1 px-6 py-12 sm:py-16">
       <slot />
     </main>
+    <footer class="border-t border-black/5">
+      <div class="mx-auto max-w-5xl px-6 py-8 text-center text-[12px] text-ink-soft">
+        RUN · 润 — 海外移居手册，数据仅供参考，请以官方信息为准。
+      </div>
+    </footer>
   </body>
 </html>

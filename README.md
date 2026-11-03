@@ -14,13 +14,28 @@
 ![数据截至](https://img.shields.io/badge/数据截至-2026--10-57606a)
 ![License](https://img.shields.io/badge/内容-CC%20BY--SA%204.0-lightgrey)
 [![English](https://img.shields.io/badge/README-English-blue)](README.en.md)
+[![在线工具](https://img.shields.io/badge/在线工具-run.viii.me-0f766e?style=for-the-badge)](https://run.viii.me)
 
-**[🧭 我该走哪条路](docs/routes/choose-route.md)** ｜ **[🌏 主要移民地区](docs/global/README.md)** ｜ **[🇪🇺 欧洲 36 国](docs/europe/README.md)** ｜ **[📊 路线对比](docs/europe/README.md#compare)** ｜ **[📑 文件准备](docs/practical/china-documents.md)**
+**[🧭 我该走哪条路](docs/routes/choose-route.md)** ｜ **[🌏 主要移民地区](docs/global/README.md)** ｜ **[🇪🇺 欧洲 36 国](docs/europe/README.md)** ｜ **[📊 路线对比](docs/europe/README.md#compare)** ｜ **[📑 文件准备](docs/practical/china-documents.md)** ｜ **[🖥️ 在线工具 run.viii.me](https://run.viii.me)**
 
 </div>
 
 > [!CAUTION]
 > 本手册仅供信息参考，**不构成**移民、法律、税务或投资建议。2025–2026 年大量路线关闭或改规则，网上很多旧攻略已经失效——任何决定前请以各国官方页面为准。详见 [免责声明](DISCLAIMER.md)。
+
+---
+
+## 🖥️ 在线工具 — [run.viii.me](https://run.viii.me)
+
+除了看文档，也可以直接用网页版做决策和查数据：
+
+| | 工具 | 说明 |
+|:-:|---|---|
+| 🧭 | [我该走哪条路](https://run.viii.me) | 四步问答（收入来源 → 目标 → 护照限制 → 自检），直接给出推荐路线 |
+| 📊 | [路线库](https://run.viii.me/routes) | 按类型、门槛、是否支持家属筛选全部欧洲移民路线 |
+| 🏙️ | [国家对比](https://run.viii.me/countries) | 点列名排序、勾选国家并排对比生活成本、个税、护照、永居/入籍年限 |
+
+源码见 [`web/`](web/)（Astro + React + Tailwind）。
 
 ---
 
@@ -264,7 +279,8 @@ RUN/
 │   ├── details/<国家>.json    每条路线的关键数字、流程、材料、注意事项
 │   └── notes/<国家>.md        每个国家的深度解读
 ├── assets/charts/            自动生成的 SVG 图表
-└── scripts/build_docs.py     由 data + src 生成 docs/europe、图表和本页的自动区块
+├── scripts/build_docs.py     由 data + src 生成 docs/europe、图表和本页的自动区块
+└── web/                      在线工具 run.viii.me 的源码（Astro + React + Tailwind）
 ```
 
 修改国家内容请编辑 `src/`，然后运行：
@@ -272,6 +288,8 @@ RUN/
 ```bash
 python3 scripts/build_docs.py
 ```
+
+修改在线工具请看 [`web/README.md`](web/README.md)。
 
 发现过时信息欢迎提 Issue / PR，请附官方来源链接。详见 [CONTRIBUTING.md](CONTRIBUTING.md)。
 
