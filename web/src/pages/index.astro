@@ -1,0 +1,14 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Wizard from "../components/Wizard";
+---
+
+<Layout>
+  <div class="mb-8 text-center">
+    <h1 class="text-2xl font-bold text-slate-800">🧭 我该走哪条路？</h1>
+    <p class="mt-2 text-slate-500">
+      四步判断：收入来源 → 目标 → 护照限制 → 自检
+    </p>
+  </div>
+  <Wizard client:load />
+</Layout>
