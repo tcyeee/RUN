@@ -6,6 +6,8 @@
 - The global section (US, Canada, Australia, NZ, Japan, Korea, Singapore, Hong Kong, Philippines, Thailand, Malaysia, UAE, Latin America) is compiled from government and third-party sources and is less rigorously verified.
 - Content is written in Simplified Chinese. Structured data is in [`data/programmes.csv`](data/programmes.csv).
 
+🖥️ **Interactive web tool (Chinese UI):** [run.viii.me](https://run.viii.me) — a route-picker wizard, a filterable route library, and a country-comparison table. Source in [`web/`](web/).
+
 > **Not legal, tax or immigration advice.** Rules change constantly; always verify on official government websites.
 
 Licence: docs CC BY-SA 4.0, scripts MIT.

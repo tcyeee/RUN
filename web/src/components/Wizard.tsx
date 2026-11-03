@@ -123,13 +123,28 @@ export default function Wizard() {
   }
 
   return (
-    <div className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
+    <div className="mx-auto max-w-2xl rounded-3xl border border-black/5 bg-white/90 p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] backdrop-blur-sm sm:p-10">
+      <div className="mb-8 flex items-center justify-center gap-2">
+        {[0, 1, 2].map((i) => (
+          <span
+            key={i}
+            className={`h-1.5 rounded-full transition-all duration-300 ${
+              i === step
+                ? "w-8 bg-brand"
+                : i < step
+                  ? "w-1.5 bg-brand/40"
+                  : "w-1.5 bg-black/10"
+            }`}
+          />
+        ))}
+      </div>
+
       {step === 0 && (
         <div>
-          <h2 className="mb-1 text-lg font-semibold text-slate-800">
+          <h2 className="mb-1 text-lg font-semibold tracking-tight text-ink">
             第一步：你的收入从哪来？
           </h2>
-          <p className="mb-4 text-sm text-slate-500">
+          <p className="mb-6 text-sm text-ink-soft">
             这决定了你适合哪一大类移民路线。
           </p>
           <div className="grid gap-3 sm:grid-cols-2">
@@ -140,10 +155,12 @@ export default function Wizard() {
                   setIncome(opt);
                   setStep(1);
                 }}
-                className="flex items-start gap-3 rounded-lg border border-slate-200 p-4 text-left transition hover:border-teal-400 hover:bg-teal-50/40"
+                className="group flex items-start gap-3 rounded-2xl border border-black/5 bg-white p-4 text-left shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:border-brand/30 hover:shadow-md"
               >
-                <span className="text-2xl">{opt.icon}</span>
-                <span className="text-sm text-slate-700">{opt.label}</span>
+                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-canvas text-xl">
+                  {opt.icon}
+                </span>
+                <span className="pt-1.5 text-sm text-ink">{opt.label}</span>
               </button>
             ))}
           </div>
@@ -152,10 +169,10 @@ export default function Wizard() {
 
       {step === 1 && income && (
         <div>
-          <h2 className="mb-1 text-lg font-semibold text-slate-800">
+          <h2 className="mb-1 text-lg font-semibold tracking-tight text-ink">
             第二步：你的目标是什么？
           </h2>
-          <p className="mb-4 text-sm text-slate-500">
+          <p className="mb-6 text-sm text-ink-soft">
             已选：{income.icon} {income.label}
           </p>
           <div className="grid gap-3 sm:grid-cols-2">
@@ -166,7 +183,7 @@ export default function Wizard() {
                   setGoal(opt);
                   setStep(2);
                 }}
-                className="rounded-lg border border-slate-200 p-4 text-left text-sm text-slate-700 transition hover:border-teal-400 hover:bg-teal-50/40"
+                className="rounded-2xl border border-black/5 bg-white p-4 text-left text-sm text-ink shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:border-brand/30 hover:shadow-md"
               >
                 {opt.label}
               </button>
@@ -174,7 +191,7 @@ export default function Wizard() {
           </div>
           <button
             onClick={() => setStep(0)}
-            className="mt-4 text-sm text-slate-400 hover:text-slate-600"
+            className="mt-6 text-sm text-ink-soft transition-colors hover:text-ink"
           >
             ← 上一步
           </button>
@@ -183,36 +200,34 @@ export default function Wizard() {
 
       {step === 2 && income && (
         <div>
-          <h2 className="mb-1 text-lg font-semibold text-slate-800">
+          <h2 className="mb-1 text-lg font-semibold tracking-tight text-ink">
             匹配到 {results.length} 条路线
           </h2>
-          <p className="mb-4 text-sm text-slate-500">
+          <p className="mb-6 text-sm text-ink-soft">
             {income.icon} {income.label} · {goal?.label}
           </p>
 
           {income.note && (
-            <p className="mb-4 rounded-lg bg-amber-50 p-3 text-sm text-amber-700">
+            <p className="mb-6 rounded-2xl bg-amber-50/80 p-4 text-sm text-amber-700">
               {income.note}
             </p>
           )}
 
-          <div className="mb-6 divide-y divide-slate-100 rounded-lg border border-slate-200">
+          <div className="mb-6 divide-y divide-black/5 overflow-hidden rounded-2xl border border-black/5 bg-white">
             {results.length === 0 && (
-              <p className="p-4 text-sm text-slate-500">
+              <p className="p-4 text-sm text-ink-soft">
                 没有匹配结果，试试换一个目标，或直接去路线库看全部。
               </p>
             )}
             {results.slice(0, 20).map((p) => (
               <div
                 key={p.slug}
-                className="flex items-center justify-between gap-3 p-3 text-sm"
+                className="flex items-center justify-between gap-3 p-4 text-sm transition-colors hover:bg-canvas/60"
               >
                 <div>
-                  <span className="font-medium text-slate-800">
-                    {p.country}
-                  </span>
-                  <span className="ml-2 text-slate-500">{p.programme}</span>
-                  <span className="ml-2 rounded bg-slate-100 px-1.5 py-0.5 text-xs text-slate-500">
+                  <span className="font-medium text-ink">{p.country}</span>
+                  <span className="ml-2 text-ink-soft">{p.programme}</span>
+                  <span className="ml-2 rounded-full bg-canvas px-2 py-0.5 text-xs text-ink-soft">
                     {routeTypeLabel[p.route_type]}
                   </span>
                 </div>
@@ -220,7 +235,7 @@ export default function Wizard() {
                   href={p.letsmigrate}
                   target="_blank"
                   rel="noreferrer"
-                  className="shrink-0 text-teal-600 hover:underline"
+                  className="shrink-0 font-medium text-brand hover:underline"
                 >
                   详情 →
                 </a>
@@ -228,11 +243,11 @@ export default function Wizard() {
             ))}
           </div>
 
-          <details className="mb-4 rounded-lg border border-amber-200 bg-amber-50/50 p-3 text-sm">
+          <details className="mb-4 rounded-2xl border border-amber-100 bg-amber-50/50 p-4 text-sm">
             <summary className="cursor-pointer font-medium text-amber-800">
               ⚠️ 中国大陆护照常见排除路线（不代表以上结果，仅作提醒）
             </summary>
-            <ul className="mt-2 space-y-1 text-amber-700">
+            <ul className="mt-3 space-y-1 text-amber-700">
               {passportExclusions.map((x) => (
                 <li key={x.route}>
                   <span className="font-medium">{x.route}</span> — {x.reason}
@@ -241,33 +256,33 @@ export default function Wizard() {
             </ul>
           </details>
 
-          <details className="mb-4 rounded-lg border border-slate-200 p-3 text-sm">
-            <summary className="cursor-pointer font-medium text-slate-700">
+          <details className="mb-6 rounded-2xl border border-black/5 bg-white p-4 text-sm">
+            <summary className="cursor-pointer font-medium text-ink">
               ✅ 决定前的自检清单
             </summary>
-            <ul className="mt-2 list-disc space-y-1 pl-5 text-slate-600">
+            <ul className="mt-3 list-disc space-y-1 pl-5 text-ink-soft">
               {checklist.map((c) => (
                 <li key={c}>{c}</li>
               ))}
             </ul>
           </details>
 
-          <div className="flex gap-3">
+          <div className="flex items-center gap-5">
             <button
               onClick={() => setStep(1)}
-              className="text-sm text-slate-400 hover:text-slate-600"
+              className="text-sm text-ink-soft transition-colors hover:text-ink"
             >
               ← 换个目标
             </button>
             <button
               onClick={restart}
-              className="text-sm text-slate-400 hover:text-slate-600"
+              className="text-sm text-ink-soft transition-colors hover:text-ink"
             >
               重新开始
             </button>
             <a
               href="/routes"
-              className="ml-auto text-sm font-medium text-teal-600 hover:underline"
+              className="ml-auto rounded-full bg-ink px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-ink/90"
             >
               去路线库看全部 →
             </a>

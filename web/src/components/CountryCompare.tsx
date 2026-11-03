@@ -56,53 +56,54 @@ export default function CountryCompare() {
   const compared = countries.filter((c) => selected.has(c.slug));
 
   return (
-    <div className="space-y-6">
-      <div className="overflow-x-auto rounded-lg border border-slate-200">
+    <div className="space-y-8">
+      <div className="overflow-x-auto rounded-2xl border border-black/5 bg-white shadow-sm">
         <table className="w-full text-left text-sm">
-          <thead className="bg-slate-100 text-slate-600">
+          <thead className="bg-canvas text-xs font-medium tracking-wide text-ink-soft">
             <tr>
-              <th className="px-3 py-2"></th>
+              <th className="whitespace-nowrap px-4 py-3"></th>
               {columns.map((c) => (
                 <th
                   key={c.key}
                   onClick={() => toggleSort(c.key)}
                   title={c.hint}
-                  className="cursor-pointer select-none px-3 py-2 hover:text-teal-600"
+                  className="cursor-pointer select-none whitespace-nowrap px-4 py-3 transition-colors hover:text-brand"
                 >
                   {c.label}
                   {sortKey === c.key ? (asc ? " ▲" : " ▼") : ""}
                 </th>
               ))}
-              <th className="px-3 py-2">永居</th>
-              <th className="px-3 py-2">入籍</th>
-              <th className="px-3 py-2">保留原国籍</th>
+              <th className="whitespace-nowrap px-4 py-3">永居</th>
+              <th className="whitespace-nowrap px-4 py-3">入籍</th>
+              <th className="whitespace-nowrap px-4 py-3">保留原国籍</th>
             </tr>
           </thead>
           <tbody>
             {sorted.map((c) => (
               <tr
                 key={c.slug}
-                className="border-t border-slate-100 hover:bg-slate-50"
+                className="border-t border-black/5 transition-colors hover:bg-canvas/60"
               >
-                <td className="px-3 py-2">
+                <td className="whitespace-nowrap px-4 py-3">
                   <input
                     type="checkbox"
                     checked={selected.has(c.slug)}
                     onChange={() => toggleSelect(c.slug)}
+                    className="accent-brand"
                   />
                 </td>
-                <td className="px-3 py-2 font-medium text-slate-800">
-                  {c.name}
+                <td className="whitespace-nowrap px-4 py-3 font-medium text-ink">{c.name}</td>
+                <td className="whitespace-nowrap px-4 py-3 text-ink-soft">{c.col ?? "—"}</td>
+                <td className="whitespace-nowrap px-4 py-3 text-ink-soft">{c.rent ?? "—"}</td>
+                <td className="whitespace-nowrap px-4 py-3 text-ink-soft">{c.safety ?? "—"}</td>
+                <td className="whitespace-nowrap px-4 py-3 text-ink-soft">{c.tax ?? "—"}</td>
+                <td className="whitespace-nowrap px-4 py-3 text-ink-soft">{c.salary ?? "—"}</td>
+                <td className="whitespace-nowrap px-4 py-3 text-ink-soft">
+                  {c.passport ?? "—"}
                 </td>
-                <td className="px-3 py-2 text-slate-500">{c.col ?? "—"}</td>
-                <td className="px-3 py-2 text-slate-500">{c.rent ?? "—"}</td>
-                <td className="px-3 py-2 text-slate-500">{c.safety ?? "—"}</td>
-                <td className="px-3 py-2 text-slate-500">{c.tax ?? "—"}</td>
-                <td className="px-3 py-2 text-slate-500">{c.salary ?? "—"}</td>
-                <td className="px-3 py-2 text-slate-500">{c.passport ?? "—"}</td>
-                <td className="px-3 py-2 text-slate-500">{c.pr}</td>
-                <td className="px-3 py-2 text-slate-500">{c.cit}</td>
-                <td className="px-3 py-2 text-slate-500">{c.dual}</td>
+                <td className="whitespace-nowrap px-4 py-3 text-ink-soft">{c.pr}</td>
+                <td className="whitespace-nowrap px-4 py-3 text-ink-soft">{c.cit}</td>
+                <td className="whitespace-nowrap px-4 py-3 text-ink-soft">{c.dual}</td>
               </tr>
             ))}
           </tbody>
@@ -111,38 +112,38 @@ export default function CountryCompare() {
 
       {compared.length > 0 && (
         <div>
-          <h3 className="mb-2 text-sm font-semibold text-slate-700">
+          <h3 className="mb-3 text-sm font-semibold tracking-tight text-ink">
             对比（已选 {compared.length} 个）
           </h3>
           <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
             {compared.map((c) => (
               <div
                 key={c.slug}
-                className="rounded-lg border border-teal-200 bg-teal-50/40 p-4"
+                className="rounded-2xl border border-brand/15 bg-brand/5 p-5 shadow-sm"
               >
-                <div className="mb-2 font-semibold text-slate-800">
+                <div className="mb-3 font-semibold tracking-tight text-ink">
                   {c.name}
                 </div>
-                <dl className="space-y-1 text-sm text-slate-600">
+                <dl className="space-y-1.5 text-sm text-ink-soft">
                   <div className="flex justify-between">
                     <dt>生活成本</dt>
-                    <dd>{c.col ?? "—"}</dd>
+                    <dd className="text-ink">{c.col ?? "—"}</dd>
                   </div>
                   <div className="flex justify-between">
                     <dt>最高个税</dt>
-                    <dd>{c.tax ?? "—"}%</dd>
+                    <dd className="text-ink">{c.tax ?? "—"}%</dd>
                   </div>
                   <div className="flex justify-between">
                     <dt>永居</dt>
-                    <dd>{c.pr}</dd>
+                    <dd className="text-ink">{c.pr}</dd>
                   </div>
                   <div className="flex justify-between">
                     <dt>入籍</dt>
-                    <dd>{c.cit}</dd>
+                    <dd className="text-ink">{c.cit}</dd>
                   </div>
                   <div className="flex justify-between">
                     <dt>语言</dt>
-                    <dd>{c.lang}</dd>
+                    <dd className="text-ink">{c.lang}</dd>
                   </div>
                 </dl>
               </div>
