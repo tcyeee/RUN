@@ -52,7 +52,7 @@ const incomeOptions: IncomeOption[] = [
     id: "passive",
     icon: "🏖️",
     label: "我靠养老金/租金/存款生活",
-    types: ["residence-by-investment", "other"],
+    types: ["passive", "residence-by-investment"],
     note: "本站路线库对纯被动收入签证（如葡萄牙 D7、西班牙 NLV）覆盖还不全，建议同时查看手册的被动收入路线页。",
   },
 ];

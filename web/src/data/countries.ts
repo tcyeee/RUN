@@ -53,6 +53,21 @@ const countrySlugToName: Record<string, string> = {
   switzerland: "瑞士",
   turkiye: "土耳其",
   "united-kingdom": "英国",
+  usa: "美国",
+  canada: "加拿大",
+  australia: "澳大利亚",
+  "new-zealand": "新西兰",
+  japan: "日本",
+  "south-korea": "韩国",
+  singapore: "新加坡",
+  "hong-kong": "香港",
+  philippines: "菲律宾",
+  thailand: "泰国",
+  malaysia: "马来西亚",
+  uae: "阿联酋",
+  mexico: "墨西哥",
+  panama: "巴拿马",
+  argentina: "阿根廷",
 };
 
 const { _meta, ...rest } = raw as Record<string, any>;

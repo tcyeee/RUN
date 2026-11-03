@@ -1,7 +1,7 @@
 import { useMemo, useState } from "react";
-import { geoMercator } from "d3-geo";
+import { geoNaturalEarth1 } from "d3-geo";
 import { ComposableMap, Geographies, Geography } from "react-simple-maps";
-import europeMap from "../data/europe-map.json";
+import worldMap from "../data/world-map.json";
 import { countries } from "../data/countries";
 import { routeTypeLabel, type Programme } from "../data/programmes";
 
@@ -10,8 +10,8 @@ interface CountryMapProps {
   title: string;
 }
 
-const MAP_WIDTH = 820;
-const MAP_HEIGHT = 760;
+const MAP_WIDTH = 900;
+const MAP_HEIGHT = 500;
 
 const profileBySlug = new Map(countries.map((c) => [c.slug, c]));
 
@@ -20,12 +20,12 @@ export default function CountryMap({ programmes, title }: CountryMapProps) {
 
   const projection = useMemo(
     () =>
-      geoMercator().fitExtent(
+      geoNaturalEarth1().fitExtent(
         [
-          [16, 16],
-          [MAP_WIDTH - 16, MAP_HEIGHT - 16],
+          [8, 8],
+          [MAP_WIDTH - 8, MAP_HEIGHT - 8],
         ],
-        europeMap as GeoJSON.FeatureCollection,
+        worldMap as GeoJSON.FeatureCollection,
       ),
     [],
   );
@@ -64,7 +64,7 @@ export default function CountryMap({ programmes, title }: CountryMapProps) {
         className="w-full"
         style={{ height: "auto" }}
       >
-        <Geographies geography={europeMap as GeoJSON.FeatureCollection}>
+        <Geographies geography={worldMap as GeoJSON.FeatureCollection}>
           {({ geographies }) =>
             geographies.map((geo) => {
               const slug = (geo.properties as { slug: string }).slug;
